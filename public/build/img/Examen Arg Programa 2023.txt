@@ -1,0 +1,158 @@
+Ejercicio 1 ---------------------------------------------
+
+program {
+	Poner(Verde)
+	Mover(Norte)
+	Poner(Verde)
+	Mover(Norte)
+	Poner(Verde)
+	Mover(Este)
+	Poner(Verde)
+	Mover(Este)
+	Poner(Verde)
+	Mover(Sur)
+	Poner(Verde)
+	Mover(Sur)
+	Poner(Verde)
+	Mover(Oeste)
+	Poner(Verde)
+}
+
+Ejercicio 2 ---------------------------------------------
+
+program {
+	Poner(color)
+	Mover(Norte)
+	Poner(color)
+	Mover(Norte)
+	Poner(color)
+	Mover(Este)
+	Poner(color)
+	Mover(Este)
+	Poner(color)
+	Mover(Sur)
+	Poner(color)
+	Mover(Sur)
+	Poner(color)
+	Mover(Oeste)
+	Poner(color)
+}
+
+Ejercicio 3 ---------------------------------------------
+
+function esMasChicaLaSuma(a, b, c){
+	return (a+b)<c
+}
+
+Ejercicio 4 ---------------------------------------------
+
+function seleccionarVestimenta(temperatura, color){
+	if (temperatura >= 21) {
+		return "Remera " + (color);	
+	} else {
+		return "Campera " + (color);
+	}
+}
+
+Ejercicio 5 ---------------------------------------------
+
+function filtrarLargas(palabras){
+	let sumapalabras = []
+	for (let index of palabras){
+		if (longitud(index) > 6){
+			sumapalabras.push(index)
+		}
+	} return sumapalabras;
+}
+
+Ejercicio 6 ---------------------------------------------
+
+function resumenDeLaSuscripcion(registro){
+	return  registro.nombre + " "+"tiene una suscripción hace " + (2021-registro.anioSuscripcion) + " años leyó " + longitud(registro.librosLeidos) + " libros"
+
+}
+
+Ejercicio 7 ---------------------------------------------
+
+class Cena
+	def initialize(sal)
+		@cucharadas_sal = sal
+	end
+	def sal
+		@sal
+	end
+	def cucharadas_sal
+		@cucharadas_sal
+	end
+	def agregar_cucharadas!(agregado)
+		@cucharadas_sal += agregado
+	end
+	def sal_de_mas?
+		@cucharadas_sal > 5
+	end
+end
+
+Ejercicio 8 ---------------------------------------------
+
+module Compilado
+	@canciones = [AmorAusente, Eco, Agujas, ElBalcon, GuitarrasDeCarton]
+
+def self.cantidad_cortas
+	@canciones.count {
+	|cancion|cancion.corta?
+	}
+end
+
+end
+
+Ejercicio 9 ---------------------------------------------
+
+class Persona
+	def initialize(mascota)
+		@mascota = mascota
+	end
+	def jugar!
+		@jugar
+	end
+	def jugar_con_mascota!
+		@mascota.jugar!
+	end
+end
+
+class Perro < Persona
+	def initialize()
+		@tiene_hambre = false
+	end
+	def jugar_con_mascota!
+		@jugar_con_mascota
+	end
+	def tiene_hambre
+		@tiene_hambre
+	end
+	def jugar!
+		@tiene_hambre = true
+	end
+end
+
+class Gato < Persona
+	def initialize(nivel_de_felicidad)
+		@nivel_de_felicidad = nivel_de_felicidad
+	end
+	def jugar_con_mascota!
+		@jugar_con_mascota
+	end
+	def nivel_de_felicidad
+		@nivel_de_felicidad
+	end
+	def jugar!
+		@nivel_de_felicidad += 4
+	end
+end
+
+class Tortuga
+	def jugar!
+		@jugar
+	end
+end
+
+----------------------------------- FIN -------------------------------------
